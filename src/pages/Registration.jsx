@@ -126,14 +126,14 @@ const Registration = () => {
             <ErrorMessage>{formik.errors.email}</ErrorMessage>
           ) : null}
 
-          {/* <label for="gender">Gender</label>
+          <label for="gender">Gender</label>
           <select
             name="gender"
             id="gender"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.gender}
-            className="w-full shadow-xl rounded h-12 mb-2 bg-transparent outline-none"
+            className="w-full rounded border border-[#595959] h-12 mb-2 bg-transparent outline-none"
           >
             <option value="" label="Select a gender">
               Select a gender
@@ -144,13 +144,13 @@ const Registration = () => {
             <option className="cursor-pointer" value="Female">
               Female
             </option>
-            <option className="cursor-pointer" value="Prefer not to Say">
+            {/* <option className="cursor-pointer" value="Prefer not to Say">
               Prefer not to say
-            </option>
+            </option> */}
           </select>
           {formik.touched.gender && formik.errors.gender ? (
             <ErrorMessage>{formik.errors.email}</ErrorMessage>
-          ) : null} */}
+          ) : null}
           <InputField
             type="password"
             id="password"
