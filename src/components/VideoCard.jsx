@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getUserData, likeAPost } from "../redux/DashboardSlice";
 import "./image.css";
 import Stamps from "./Stamps";
+import VideoInfo from "./VideoInfo";
 const VideoCard = ({ videos }) => {
   const [controls, setControls] = useState(false);
   const addControl = () => {
@@ -33,8 +34,10 @@ const VideoCard = ({ videos }) => {
       {videos?.map(({ urls }, idx) => (
         <div key={idx} className="relative" onClick={addControl}>
           <Stamps />
+          <VideoInfo />
           <ReactPlayer
             muted={true}
+            autoplay
             playing={true}
             controls={controls}
             width="100%"

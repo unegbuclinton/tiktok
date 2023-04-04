@@ -58,9 +58,6 @@ const Dashboard = () => {
     {
       urls: "http://files.fullstack.edu.vn/f8-tiktok/videos/1947-64235df74f87f.mp4",
     },
-    {
-      urls: "https://files.fullstack.edu.vn/f8-tiktok/videos/1944-642288e7364d8.mp4",
-    },
   ];
   return (
     <Dashboardlayout>
