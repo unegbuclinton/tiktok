@@ -19,7 +19,7 @@ const Registration = () => {
       name: "",
       cdf: "",
       dob: "",
-      gender: "",
+      // gender: "",
       password: "",
       confirmPassword: "",
       whatsapp: "",
@@ -29,7 +29,7 @@ const Registration = () => {
       const body = {
         name: formik.values.name,
         email: formik.values.email,
-        gender: formik.values.gender,
+        // gender: formik.values.gender,
         password: formik.values.password,
         confirmPassword: formik.values.confirmPassword,
       };
@@ -126,7 +126,7 @@ const Registration = () => {
             <ErrorMessage>{formik.errors.email}</ErrorMessage>
           ) : null}
 
-          <label for="gender">Gender</label>
+          {/* <label for="gender">Gender</label>
           <select
             name="gender"
             id="gender"
@@ -150,7 +150,7 @@ const Registration = () => {
           </select>
           {formik.touched.gender && formik.errors.gender ? (
             <ErrorMessage>{formik.errors.email}</ErrorMessage>
-          ) : null}
+          ) : null} */}
           <InputField
             type="password"
             id="password"
