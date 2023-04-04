@@ -1,8 +1,6 @@
 import React from "react";
 import { AiOutlineHeart, AiOutlineComment } from "react-icons/ai";
-import likes from "../assets/images/icons/svgs/filled-heart.svg";
-import comments from "../assets/images/icons/svgs/comments.svg";
-import share from "../assets/images/icons/svgs/share.svg";
+
 const Stamps = () => {
   return (
     <div className=" flex flex-col justify-center items-center absolute bottom-28 right-3 z-10 text-[12px] text-white font-medium">
