@@ -8,7 +8,7 @@ import ErrorMessage from "../components/ErrorMessage";
 import InputField from "../components/Input";
 import { userRegister } from "../redux/authSlice";
 import { registrationSchema } from "../validation/Schema";
-import tik from "../assets/images/tik.png";
+import tik from "../assets/images/tiktok.png";
 import "./pages.css";
 const Registration = () => {
   const dispatch = useDispatch();
@@ -48,7 +48,7 @@ const Registration = () => {
     <div className="flex justify-center">
       <div className=" flex flex-col justify-center items-center pt-5 lg:p-20">
         <div className="flex justify-center">
-          <img src={tik} alt="" className="w-[60%]" />
+          <img src={tik} alt="" className="w-[35%]" />
         </div>
         <form
           onSubmit={formik.handleSubmit}
@@ -193,7 +193,7 @@ const Registration = () => {
             Already have an account?{" "}
             <span
               className="cursor-pointer text-folly "
-              onClick={() => navigate("/login")}
+              onClick={() => navigate("/")}
             >
               Login
             </span>

@@ -8,7 +8,7 @@ import InputField from "../components/Input";
 import { resetState, userLogin } from "../redux/authSlice";
 import { getUserData, resetDashboardState } from "../redux/DashboardSlice";
 import { loginSchema } from "../validation/Schema";
-import tik from "../assets/images/tik.png";
+import tik from "../assets/images/tiktok.png";
 import "./pages.css";
 
 const Login = () => {
@@ -49,7 +49,7 @@ const Login = () => {
             Log in
           </h1> */}
           <div className="flex justify-center">
-            <img src={tik} alt="" className="w-[50%]" />
+            <img src={tik} alt="" className="w-[20%]" />
           </div>
           <InputField
             type="text"
