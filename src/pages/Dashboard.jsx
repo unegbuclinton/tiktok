@@ -3,7 +3,6 @@ import ReactPlayer from "react-player";
 import { useDispatch, useSelector } from "react-redux";
 import SyncLoader from "react-spinners/SyncLoader";
 import Dashboardlayout from "../components/Dashboardlayout";
-import Stamps from "../components/Stamps";
 import VideoCard from "../components/VideoCard";
 // import ImageCard from "../components/ImageCard";
 
