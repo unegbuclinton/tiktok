@@ -19,7 +19,7 @@ const Registration = () => {
       name: "",
       cdf: "",
       dob: "",
-      // gender: "",
+      gender: "",
       password: "",
       confirmPassword: "",
       whatsapp: "",
@@ -29,7 +29,7 @@ const Registration = () => {
       const body = {
         name: formik.values.name,
         email: formik.values.email,
-        // gender: formik.values.gender,
+        gender: formik.values.gender,
         password: formik.values.password,
         confirmPassword: formik.values.confirmPassword,
       };
@@ -37,7 +37,7 @@ const Registration = () => {
       dispatch(userRegister(body)).then((data) => {
         if (data.payload) {
           toast.success("Signup Complete");
-          navigate("/login");
+          navigate("/");
         }
       });
     },
